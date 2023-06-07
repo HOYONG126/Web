@@ -25,9 +25,8 @@
 	//콜백함수에 화살표함수를 전달하여 화살표함수의 명령을 반복 실행
 	var id=setInterval(() => alert("setInterval 함수에 의해 반복 실행되는 명령"), 1000);
 	
-	setTimeout(function() {
-		clearInterval(id);	
-	}, 5000);
+	setTimeout(
+	()=>clearInterval(id), 5000);
 	</script>
 </body>
 </html>
